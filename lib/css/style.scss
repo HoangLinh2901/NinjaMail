@@ -2133,17 +2133,14 @@ footer{
 
         .logo{
             img{
-                width: 120px;
-                height: 32px;
+                width: 110px;
+                height: 29px;
             }
         }
 
         nav{
             ul{
                 li{
-                    margin-left: 11px;
-                    padding: 1px 5px;
-                    border-bottom: 3px solid $green;
                     display: none;
     
                     &.sign-up{
@@ -2153,8 +2150,9 @@ footer{
                         margin-left: 16px;
                         
                         button{
-                            font-size: 12px;
-                            padding: 6px 14px;
+                            font-size: 11px;
+                            padding: 3px 12px;
+                            font-weight: 700;
                         }
                     }
     
@@ -2167,49 +2165,53 @@ footer{
     }
 
     article{
-        padding: 30px 0px 37px 0px;
+        padding: 30px 0px 30px 0px;
 
         .try-now{
             width: 100%;
-            margin-top: 15px;
+            margin-top: 20px;
 
-            h3{
+            h3{ 
+                width: 65%;
                 font-size: 25px;
                 line-height: 33px;
+                margin-left: 10px;
+                margin-bottom: 139px;
             }
     
             p{                 
-                font-size: 12px;
+                font-size: 13px;
                 line-height: 16px;
                 margin-top: 16px;
-                margin-bottom: 30px;
+                margin-bottom: 13px;
 
             }
     
             .try-btn{
-    
+                text-align: center;
+
                 .try{
-                    width: 131px;
-                    height: 42px;
-                    font-size: 13px;
+                    width: 112px;
+                    height: 36px;
+                    font-size: 11px;
                     line-height: 15px;
-                    border: 3px solid #4BA87D;
-                    margin-right: 35px;
+                    border: 2px solid #4BA87D;
+                    margin-right: 20px;
                 }
     
                 .demo{
-                    width: 131px;
-                    height: 42px;
-                    font-size: 13px;
+                    width: 112px;
+                    height: 36px;
+                    font-size: 11px;
                     line-height: 15px;
-                    border: 3px solid $green;
+                    border: 2px solid $green;
                 }
             }
         }
 
         img{
             right: 0px;
-            top: 60px;
+            top: 25px;
             width: 400px;
             height: 219px;
         }
@@ -2217,24 +2219,26 @@ footer{
 
 
     .video-detail{
-        padding: 85px 0 114px 0;
+        padding: 30px 15px 114px 15px;
         
         .reach-more{
-            top: 40%;
-            bottom: 40%;
+            top: 32%;
+            bottom: 32%;
+            left: 21%;
+            right: 21%;
 
 
             h4{
-                font-size: 35px;
-                line-height: 51px;
-                margin-bottom: 41px;
+                font-size: 22px;
+                line-height: 29px;
+                margin-bottom: 20px;
             }
 
             button{
                 width: 132px;
                 height: 42px;
-                font-size: 13px;
-                line-height: 15px;
+                font-size: 11px;
+                line-height: 10px;
             }
         }
 
@@ -2249,31 +2253,35 @@ footer{
     }
 
     .news{
-        margin-top: -171px;
-        padding-top: 117px;
-        padding-bottom: 0px;
+        margin-top: -152px;
+        padding-top: 68px;
+        padding-bottom: 14px;
     
         
         .new-wrap{
             transform: skew(0deg, 10deg);
+            flex-wrap: wrap;
+            
             
             .down1{
-                margin-bottom: 132px;
+                margin-bottom: 48px;
             }
     
-            .down2{        
-                margin-top: 53px;
-                margin-bottom: 84px;
+            .down2{           
+                margin-bottom: -41px;
+                margin-top: 75px;
             }
     
             .new{
+                width: 192px;
+
 
                 .new-img{
-                    width: 209px;
+                    width: 192px;
                 }
             
                 .new-detail{
-                    width: 209px;
+                    width: 192px;
                     padding: 17px 24px;;
             
                     p{
@@ -2282,42 +2290,45 @@ footer{
                         margin-bottom: 7px;
                     }
             
-                    a{
-                        font-size: 12px;
-                        line-height: 14px;
+                    a{  
+                        font-size: 11px;
+                        line-height: 12px;
                     }
                 }
             }
     
             .ads{
-                width: 228px;
-                padding-top: 138px;
+                width: 248px;
+                padding-top: 49px;
         
                 h4{    
-                    font-size: 28px;
-                    line-height: 31px;
-                    margin-bottom: 17px;
+                    font-size: 24px;
+                    line-height: 27px;
+                    margin-bottom: 13px;
                 }
         
                 p{
                     width: 92%;
-                    font-size: 12px;
-                    line-height: 16px;
+                    font-size: 11px;
+                    line-height: 13px;
                 }
             }
         }
     }
-
+    
 
     .contact{
     
         .member{
+            margin: 0 -4px;
+            align-items: center;
+            flex-direction: column;
     
             .member-img{
     
                 img{
-                    width: 209px;
-                    height: 156px;
+                    width: 337px;
+                    height: 226px;
                 }
     
                 .member-name{
@@ -2339,9 +2350,9 @@ footer{
         }
     
         .slogan{
-            max-width: 545px;
-            margin-top: 27px;
-            margin-bottom: 30px;
+            max-width: 545px;          
+            margin-top: 12px;
+            margin-bottom: 22px;
     
             h5{
                 font-size: 28px;

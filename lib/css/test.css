@@ -1,47 +1,46 @@
-html, body {
-    background: white;
-    text-align: center;
-    height: 100%;
-    overflow: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
-.button-wrapper {
-    $root: &;
-  
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    width: 280px;
-  
-    &__text {
+html,
+      body {
         position: relative;
-        font-family: 'helvetica';
-        font-size: 22px;
-        line-height: 32px;
-        color: #2A2A2A;
-        top: -48px;
-    }
-  
-    &__shape {
-        stroke-width: 2px;
-        stroke-dashoffset: 0;
-        stroke-dasharray: 760;
-        fill: transparent;
-        stroke: #19f6e8;
-        border-bottom: 5px solid black;
-        transition: stroke-width 700ms, stroke-dashoffset 700ms,       stroke-dasharray 700ms;
-    }
-
-    &:hover {
-      #{$root}__shape {
-          stroke-dasharray: 140 540;
-          stroke-dashoffset: -414;
-          stroke-width: 8px;
+        height: 100%;
       }
-    }
-}
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }

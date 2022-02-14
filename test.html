@@ -6,20 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="lib/css/animate.min.css">
+    <link rel="stylesheet" href="lib/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="lib/css/test.css">
 
     
 </head>
 <body>
-  <!-- about -->
-  <div class="button-wrapper">
-    <a href="">
-       <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-          <rect class="button-wrapper__shape" height="60" width="280" rx="0" />
-          <div class="button-wrapper__text">Read More</div>
-       </svg>
-    </a>
- </div>
+   <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
 
 
 
