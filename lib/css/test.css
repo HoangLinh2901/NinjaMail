@@ -1,0 +1,47 @@
+html, body {
+    background: white;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-wrapper {
+    $root: &;
+  
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 280px;
+  
+    &__text {
+        position: relative;
+        font-family: 'helvetica';
+        font-size: 22px;
+        line-height: 32px;
+        color: #2A2A2A;
+        top: -48px;
+    }
+  
+    &__shape {
+        stroke-width: 2px;
+        stroke-dashoffset: 0;
+        stroke-dasharray: 760;
+        fill: transparent;
+        stroke: #19f6e8;
+        border-bottom: 5px solid black;
+        transition: stroke-width 700ms, stroke-dashoffset 700ms,       stroke-dasharray 700ms;
+    }
+
+    &:hover {
+      #{$root}__shape {
+          stroke-dasharray: 140 540;
+          stroke-dashoffset: -414;
+          stroke-width: 8px;
+      }
+    }
+}
