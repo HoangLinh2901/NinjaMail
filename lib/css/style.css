@@ -390,7 +390,6 @@ article img {
 }
 .contact .send-email .email-input {
   display: flex;
-  align-items: center;
 }
 .contact .send-email .email-input input {
   width: 100%;
@@ -403,6 +402,31 @@ article img {
   font-weight: 500;
   font-size: 21px;
   line-height: 25px;
+}
+.contact .send-email .email-input .input {
+  width: 100%;
+  margin-right: 10px;
+}
+.contact .send-email .email-input .input input {
+  width: 100%;
+  height: 65px;
+  padding: 19px 25px;
+  border: 1px solid #9F9F9F;
+  border-radius: 5px;
+  margin-right: 27px;
+  color: rgba(101, 1, 7, 0.87);
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+}
+.contact .send-email .email-input .input .alert {
+  margin-top: 20px;
+}
+.contact .send-email .email-input .input .alert p {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #4BA87D;
 }
 .contact .send-email .email-input button {
   max-width: 221px;
@@ -421,15 +445,6 @@ article img {
 .contact .send-email .email-input button:hover {
   color: #4BA87D;
   background: #FFFFFF;
-}
-.contact .send-email .alert {
-  margin-top: 20px;
-}
-.contact .send-email .alert p {
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 25px;
-  color: #4BA87D;
 }
 .contact .slogan2 {
   max-width: 415px;
@@ -709,17 +724,28 @@ footer .colum ul li a:hover {
   }
   .contact .send-email .email-input {
     display: flex;
-    align-items: center;
   }
-  .contact .send-email .email-input input {
+  .contact .send-email .email-input .input {
+    width: 100%;
+    margin-right: 10px;
+  }
+  .contact .send-email .email-input .input input {
     width: 100%;
     height: 57px;
-    padding: 19px 25px;
+    padding: 12px 16px;
     border: 1px solid #9F9F9F;
     border-radius: 5px;
-    margin-right: 27px;
-    font-size: 20px;
-    line-height: 25px;
+    margin-right: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact .send-email .email-input .input .alert {
+    margin-top: 4px;
+    padding: 4px 1.25rem;
+  }
+  .contact .send-email .email-input .input .alert p {
+    font-size: 16px;
+    line-height: 20px;
   }
   .contact .send-email .email-input button {
     max-width: 200px;
@@ -729,13 +755,6 @@ footer .colum ul li a:hover {
     line-height: 20px;
     letter-spacing: 2.1px;
     border: none;
-  }
-  .contact .send-email .alert {
-    margin-top: 4px;
-  }
-  .contact .send-email .alert p {
-    font-size: 20px;
-    line-height: 25px;
   }
   .contact .slogan2 {
     max-width: 415px;
@@ -982,17 +1001,28 @@ footer .colum ul li a:hover {
   }
   .contact .send-email .email-input {
     display: flex;
-    align-items: center;
   }
-  .contact .send-email .email-input input {
+  .contact .send-email .email-input .input {
+    width: 100%;
+    margin-right: 10px;
+  }
+  .contact .send-email .email-input .input input {
     width: 100%;
     height: 48px;
-    padding: 15px 18px;
+    padding: 12px 16px;
     border: 1px solid #9F9F9F;
     border-radius: 5px;
-    margin-right: 20px;
-    font-size: 17px;
-    line-height: 23px;
+    margin-right: 0;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .contact .send-email .email-input .input .alert {
+    margin-top: 4px;
+    padding: 4px 1.25rem;
+  }
+  .contact .send-email .email-input .input .alert p {
+    font-size: 15px;
+    line-height: 18px;
   }
   .contact .send-email .email-input button {
     max-width: 180px;
@@ -1002,13 +1032,6 @@ footer .colum ul li a:hover {
     line-height: 8px;
     letter-spacing: 2.1px;
     border: none;
-  }
-  .contact .send-email .alert {
-    margin-top: 4px;
-  }
-  .contact .send-email .alert p {
-    font-size: 17px;
-    line-height: 15px;
   }
   .contact .slogan2 {
     max-width: 415px;
@@ -1264,16 +1287,27 @@ footer .colum ul li a:hover {
   }
   .contact .send-email .email-input {
     display: flex;
-    align-items: center;
   }
-  .contact .send-email .email-input input {
+  .contact .send-email .email-input .input {
+    width: 100%;
+    margin-right: 10px;
+  }
+  .contact .send-email .email-input .input input {
     width: 100%;
     height: 42px;
     padding: 12px 16px;
     border: 1px solid #9F9F9F;
     border-radius: 5px;
-    margin-right: 17px;
-    font-size: 13px;
+    margin-right: 0;
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .contact .send-email .email-input .input .alert {
+    margin-top: 4px;
+    padding: 4px 1.25rem;
+  }
+  .contact .send-email .email-input .input .alert p {
+    font-size: 11px;
     line-height: 15px;
   }
   .contact .send-email .email-input button {
@@ -1284,14 +1318,6 @@ footer .colum ul li a:hover {
     line-height: 15px;
     letter-spacing: 2.1px;
     border: none;
-  }
-  .contact .send-email .alert {
-    margin-top: 4px;
-    padding: 13px 1.25rem;
-  }
-  .contact .send-email .alert p {
-    font-size: 13px;
-    line-height: 15px;
   }
   .contact .slogan2 {
     max-width: 347px;
@@ -1547,16 +1573,27 @@ footer .colum ul li a:hover {
   }
   .contact .send-email .email-input {
     display: flex;
-    align-items: center;
   }
-  .contact .send-email .email-input input {
+  .contact .send-email .email-input .input {
+    width: 100%;
+    margin-right: 10px;
+  }
+  .contact .send-email .email-input .input input {
     width: 100%;
     height: 42px;
     padding: 12px 16px;
     border: 1px solid #9F9F9F;
     border-radius: 5px;
-    margin-right: 17px;
-    font-size: 13px;
+    margin-right: 0;
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .contact .send-email .email-input .input .alert {
+    margin-top: 4px;
+    padding: 4px 1.25rem;
+  }
+  .contact .send-email .email-input .input .alert p {
+    font-size: 11px;
     line-height: 15px;
   }
   .contact .send-email .email-input button {
@@ -1567,14 +1604,6 @@ footer .colum ul li a:hover {
     line-height: 15px;
     letter-spacing: 2.1px;
     border: none;
-  }
-  .contact .send-email .alert {
-    margin-top: 4px;
-    padding: 13px 1.25rem;
-  }
-  .contact .send-email .alert p {
-    font-size: 13px;
-    line-height: 15px;
   }
   .contact .slogan2 {
     max-width: 347px;
@@ -1846,21 +1875,33 @@ footer .colum ul li a:hover {
     line-height: 36px;
   }
   .contact .send-email {
-    max-width: 436px;
+    max-width: 300px;
     width: 100%;
   }
   .contact .send-email .email-input {
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
-  .contact .send-email .email-input input {
+  .contact .send-email .email-input .input {
+    width: 100%;
+  }
+  .contact .send-email .email-input .input input {
     width: 100%;
     height: 42px;
     padding: 12px 16px;
     border: 1px solid #9F9F9F;
     border-radius: 5px;
-    margin-right: 17px;
-    font-size: 13px;
+    margin-right: 0;
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .contact .send-email .email-input .input .alert {
+    margin-top: 4px;
+    padding: 4px 1.25rem;
+  }
+  .contact .send-email .email-input .input .alert p {
+    font-size: 11px;
     line-height: 15px;
   }
   .contact .send-email .email-input button {
@@ -1871,14 +1912,6 @@ footer .colum ul li a:hover {
     line-height: 15px;
     letter-spacing: 2.1px;
     border: none;
-  }
-  .contact .send-email .alert {
-    margin-top: 4px;
-    padding: 13px 1.25rem;
-  }
-  .contact .send-email .alert p {
-    font-size: 13px;
-    line-height: 15px;
   }
   .contact .slogan2 {
     max-width: 347px;

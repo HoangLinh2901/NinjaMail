@@ -447,10 +447,8 @@ article{
 
         .email-input{
             display: flex;
-            align-items: center;
 
             input{
-                
                 width: 100%;
                 height: 65px;
                 padding: 19px 25px;
@@ -461,6 +459,35 @@ article{
                 font-weight: 500;
                 font-size: 21px;
                 line-height: 25px
+            }
+
+            .input{
+                width: 100%;
+                margin-right: 10px;
+
+                input{                         
+                    width: 100%;
+                    height: 65px;
+                    padding: 19px 25px;
+                    border: 1px solid #9F9F9F;
+                    border-radius: 5px;
+                    margin-right: 27px;
+                    color: rgba(101, 1, 7, 0.87);
+                    font-weight: 500;
+                    font-size: 21px;
+                    line-height: 25px
+                }
+
+                .alert{
+                    margin-top: 20px;
+
+                    p{
+                        font-weight: 500;
+                        font-size: 21px;
+                        line-height: 25px;
+                        color: $green;
+                    }
+                }
             }
 
             button{
@@ -482,17 +509,6 @@ article{
                     background: $white; 
                         
                 }
-            }
-        }
-
-        .alert{
-            margin-top: 20px;
-
-            p{
-                font-weight: 500;
-                font-size: 21px;
-                line-height: 25px;
-                color: $green;
             }
         }
     }
@@ -867,17 +883,32 @@ footer{
     
             .email-input{
                 display: flex;
-                align-items: center;
     
-                input{       
+                .input{
                     width: 100%;
-                    height: 57px;
-                    padding: 19px 25px;
-                    border: 1px solid #9F9F9F;
-                    border-radius: 5px;
-                    margin-right: 27px;
-                    font-size: 20px;
-                    line-height: 25px
+                    margin-right: 10px;
+
+                    input{                         
+                        width: 100%;
+                        height: 57px;
+                        padding: 12px 16px;
+                        border: 1px solid #9F9F9F;
+                        border-radius: 5px;
+                        margin-right: 0;
+                        font-size: 16px;
+                        line-height: 20px;
+                        
+                    }
+
+                    .alert{
+                        margin-top: 4px;
+                        padding: 4px 1.25rem;
+            
+                        p{
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
                 }
     
                 button{
@@ -888,15 +919,6 @@ footer{
                     line-height: 20px;
                     letter-spacing: 2.1px;
                     border: none;
-                }
-            }
-    
-            .alert{
-                margin-top: 4px;
-    
-                p{
-                    font-size: 20px;
-                    line-height: 25px;
                 }
             }
         }
@@ -1227,17 +1249,31 @@ footer{
     
             .email-input{
                 display: flex;
-                align-items: center;
     
-                input{                         
+                .input{
                     width: 100%;
-                    height: 48px;
-                    padding: 15px 18px;
-                    border: 1px solid #9F9F9F;
-                    border-radius: 5px;
-                    margin-right: 20px;
-                    font-size: 17px;
-                    line-height: 23px;
+                    margin-right: 10px;
+
+                    input{                         
+                        width: 100%;
+                        height: 48px;
+                        padding: 12px 16px;
+                        border: 1px solid #9F9F9F;
+                        border-radius: 5px;
+                        margin-right: 0;
+                        font-size: 15px;
+                        line-height: 18px; 
+                    }
+
+                    .alert{
+                        margin-top: 4px;
+                        padding: 4px 1.25rem;
+            
+                        p{
+                            font-size: 15px;
+                            line-height: 18px;
+                        }
+                    }
                 }
     
                 button{
@@ -1248,15 +1284,6 @@ footer{
                     line-height: 8px;
                     letter-spacing: 2.1px;
                     border: none;
-                }
-            }
-    
-            .alert{
-                margin-top: 4px;
-    
-                p{
-                    font-size: 17px;
-                    line-height: 15px;
                 }
             }
         }
@@ -1602,17 +1629,32 @@ footer{
     
             .email-input{
                 display: flex;
-                align-items: center;
     
-                input{                         
+                .input{
                     width: 100%;
-                    height: 42px;
-                    padding: 12px 16px;
-                    border: 1px solid #9F9F9F;
-                    border-radius: 5px;
-                    margin-right: 17px;
-                    font-size: 13px;
-                    line-height: 15px;
+                    margin-right: 10px;
+
+                    input{                         
+                        width: 100%;
+                        height: 42px;
+                        padding: 12px 16px;
+                        border: 1px solid #9F9F9F;
+                        border-radius: 5px;
+                        margin-right: 0;
+                        font-size: 11px;
+                        line-height: 15px;
+                        
+                    }
+
+                    .alert{
+                        margin-top: 4px;
+                        padding: 4px 1.25rem;
+            
+                        p{
+                            font-size: 11px;
+                            line-height: 15px;
+                        }
+                    }
                 }
     
                 button{
@@ -1623,16 +1665,6 @@ footer{
                     line-height: 15px;
                     letter-spacing: 2.1px;
                     border: none;
-                }
-            }
-    
-            .alert{
-                margin-top: 4px;
-                padding: 13px 1.25rem;
-    
-                p{
-                    font-size: 13px;
-                    line-height: 15px;
                 }
             }
         }
@@ -1976,17 +2008,32 @@ footer{
     
             .email-input{
                 display: flex;
-                align-items: center;
     
-                input{                         
+                .input{
                     width: 100%;
-                    height: 42px;
-                    padding: 12px 16px;
-                    border: 1px solid #9F9F9F;
-                    border-radius: 5px;
-                    margin-right: 17px;
-                    font-size: 13px;
-                    line-height: 15px;
+                    margin-right: 10px;
+
+                    input{                         
+                        width: 100%;
+                        height: 42px;
+                        padding: 12px 16px;
+                        border: 1px solid #9F9F9F;
+                        border-radius: 5px;
+                        margin-right: 0;
+                        font-size: 11px;
+                        line-height: 15px;
+                        
+                    }
+
+                    .alert{
+                        margin-top: 4px;
+                        padding: 4px 1.25rem;
+            
+                        p{
+                            font-size: 11px;
+                            line-height: 15px;
+                        }
+                    }
                 }
     
                 button{
@@ -2000,15 +2047,6 @@ footer{
                 }
             }
     
-            .alert{
-                margin-top: 4px;
-                padding: 13px 1.25rem;
-    
-                p{
-                    font-size: 13px;
-                    line-height: 15px;
-                }
-            }
         }
     
         .slogan2{
@@ -2361,22 +2399,37 @@ footer{
         }
     
         .send-email{
-            max-width: 436px;
+            max-width: 300px;
             width: 100%;
     
             .email-input{
                 display: flex;
                 align-items: center;
+                flex-direction: column;
     
-                input{                         
+                .input{
                     width: 100%;
-                    height: 42px;
-                    padding: 12px 16px;
-                    border: 1px solid #9F9F9F;
-                    border-radius: 5px;
-                    margin-right: 17px;
-                    font-size: 13px;
-                    line-height: 15px;
+
+                    input{                         
+                        width: 100%;
+                        height: 42px;
+                        padding: 12px 16px;
+                        border: 1px solid #9F9F9F;
+                        border-radius: 5px;
+                        margin-right: 0;
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
+
+                    .alert{
+                        margin-top: 4px;
+                        padding: 4px 1.25rem;
+            
+                        p{
+                            font-size: 11px;
+                            line-height: 15px;
+                        }
+                    }
                 }
     
                 button{
@@ -2390,15 +2443,7 @@ footer{
                 }
             }
     
-            .alert{
-                margin-top: 4px;
-                padding: 13px 1.25rem;
-    
-                p{
-                    font-size: 13px;
-                    line-height: 15px;
-                }
-            }
+            
         }
     
         .slogan2{
