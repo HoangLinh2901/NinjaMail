@@ -17,25 +17,30 @@
     <script src="https://kit.fontawesome.com/dacb7735c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- header start -->
-        <header id="header">
-            <div class="logo">
-                <a href="#"><img src="img/logo.png" alt=""></a>
+    <!-- header start -->
+    <header class="header">
+        <div class="container">
+            <div id="header">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><button><a href="#">FEATURES</a></button></li>
+                        <li><button><a href="#">PRICING</a></button></li>
+                        <li><button><a href="#">SERVICES</a></button></li>
+                        <li><button><a href="#">PARTNERS</a></button></li>
+                        <li class="sign-up"><button>SIGN UP FREE</button></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">PRICING</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PARTNERS</a></li>
-                    <li class="sign-up"><button>SIGN UP FREE</button></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- header end -->
+        </div>
+    </header>
+    <!-- header end -->
 
 
+
+    <div class="container">
         <!-- article start -->
         <article data-aos="fade-right" data-aos-duration="1000">
             <img src="img/computer-girl.svg" alt="">
@@ -173,45 +178,49 @@
                 <div class="logo-footer">
                     <img src="img/logo.png" alt="">
                 </div>
-                <div class="colum">
-                    <ul>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Partners</a></li>
-                    </ul>
-                </div>
-                <div class="colum">
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Tutorials</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Templates</a></li>
-                        <li><a href="#">Case Studies</a></li>
-                    </ul>
-                </div>
-                <div class="colum">
-                    <ul>
-                        <li><a href="#">Medium</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                    </ul>
-                </div>
-                <div class="colum">
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Slack</a></li>
-                        <li><a href="#">Jobs</a></li>
-                    </ul>
+                <div class="colum-wrap">
+                    <div class="colum">
+                        <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+                    <div class="colum">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Templates</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                        </ul>
+                    </div>
+                    <div class="colum">
+                        <ul>
+                            <li><a href="#">Medium</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="colum">
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Slack</a></li>
+                            <li><a href="#">Jobs</a></li>
+                        </ul>
+                    </div>
                 </div>
             </footer>
             <div class="copy-right">
                 <p>NinjaMail is a sample project for Quest AI. © 2019 Quest AI, All rights reserved.</p>
-                <a href="#" class="term">Terms & Conditions</a>
-                <a href="#">Privacy Policy</a>
+                <div class="tern-link">
+                    <a href="#" class="term">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
             </div>
         </div>
         <!-- footer end -->
@@ -223,5 +232,27 @@
         <script src="lib/js/wow.min.js"></script>
         <script src="lib/js/aos.js"></script>
         <script src="lib/js/script.js"></script>
+
+        <script>
+            $(document).ready(function(){
+
+                //khi lăn chuột
+                $(window).scroll(function(){
+
+                    // kiểm tra điều kiện > 300 thì mới addClass 
+                    if ( $(window).scrollTop() > 33 ){
+
+                        $('.header').addClass('active-header');
+
+                    }
+
+                    else{
+
+                        $('.header').removeClass('active-header');
+
+                    }
+                })
+            })
+        </script>
 </body>
 </html>

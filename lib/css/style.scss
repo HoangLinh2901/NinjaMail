@@ -41,6 +41,7 @@ button:focus {outline:0;}
 
 // header css start //
 $green:#4BA87D;
+$dark-green:#37795a;
 $white:#FFFFFF;
 $black:#000000;
 
@@ -52,70 +53,203 @@ $black:#000000;
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 21px;
+    width: 100%;
+    transition: all 500ms ease;
 
-    .logo{
-
-        img{
-            
+    #header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 21px;
+    
+        .logo{
+    
+            img{
+                
+            }
         }
-    }
-
-    nav{
-        ul{
-            display: flex;
-            margin-bottom: 0;
-            align-items: center;
-
-            li{
-                margin-left: 15px;
-                padding: 6px 15px;
-                border-bottom: 5px solid $green;
-
-                &.sign-up{
-                    border: none;
-                    padding: 0;
-                    margin-left: 22px;
-                    
-                    button{
-                        padding: 11px 20px;
-                        color: $white;
-                        background: $green;
-                        font-weight: 800;
-                        font-size: 17px;
-                        line-height: 20px;
-                        border: 1px solid $green;
+    
+        nav{
+            ul{
+                display: flex;
+                margin-bottom: 0;
+                align-items: center;
+    
+                li{
+                    margin-left: 11px;
+                    padding: 3px 4px;
+    
+                    button {
+                        width: 110px;
+                        height: 41px;
+                        //background-image: linear-gradient(90deg,$c-02, $c-04);
+                        background-color: transparent;
+                        margin: 0;
+                        position: relative;
+                        overflow: hidden;
+                        letter-spacing: 1px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        transition: all 0.3s ease;
                         cursor: pointer;
-                        transition: all 350ms ease;
-
-                        &:hover{
-                            color: $green;
-                            background: $white; 
-                        
+                        border:0;
+                  
+                        &:before {
+                           content: "";
+                           position: absolute;
+                           width: 0;
+                           height: 3px;
+                           background-color: $green;
+                           transition: all 0.3s 0.2s ease;
+                           left: 0;
+                           top: 0;
                         }
-                    }
-                }
-
-                a{
-                    font-style: normal;
-                    font-weight: 800;
-                    font-size: 17px;
-                    line-height: 20px;
-                    color: $black;
-                    text-decoration: none;
-                    transition: all 350ms ease;
-
-                    &:hover{
-                        color: $green;
-                        text-decoration: none;
+                  
+                        &:after {
+                           content: "";
+                           position: absolute;
+                           width: 100%;
+                           height: 3px;
+                           background-color: $green;
+                           transition: all 0.3s ease;
+                           right: 0;
+                           bottom: 0;
+                        }
+                  
+                        a {
+                           width: 100%;
+                           height: 100%;
+                           color: $black;
+                           font-weight: 800;
+                            font-size: 14px;
+                           position: absolute;
+                           left: 0;
+                           top: 0;
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                           margin:0;
+                           padding:0;
+                           z-index:1;
+                           
+                           &:before {
+                              content: "";
+                              position: absolute;
+                              width: 3px;
+                              height: 0;
+                              background-color: $green;
+                              transition: all 0.3s 0.4s ease;
+                              right: 0;
+                              top: 0;
+                           }
+                  
+                           &:after {
+                              content: "";
+                              position: absolute;
+                              width: 3px;
+                              height: 0;
+                              background-color: $green;
+                              transition: all 0.3s ease;
+                              left: 0;
+                              bottom: 0;
+                           }
+    
+                           &:hover{
+                               text-decoration: none;
+                               color: $dark-green;
+                           }
+                        }
+                        
+                       
+                  
+                        &:hover {
+                           letter-spacing: 2px;
+                           
+                           &:before,
+                           &:after {
+                              width: 100%;
+                           }
+                          
+                  
+                           a {
+                              z-index:1;
+                              &:before,
+                              &:after {
+                                 height: 100%;
+                              }
+                           }
+                           
+                           span {
+                              height: 100%;
+                              top:0;
+                           }
+                        }
+                     }
+                  
+                     button:active {
+                        outline: none;
+                        border: none;
+                     }
+                     button:focus {
+                        outline: 0;
+                     }
+    
+                     &.sign-up{
+                        border: none;
+                        padding: 0;
+                        margin-left: 22px;
+                        
+                        button{
+                            width: 168px;
+                            height: 41px;
+                            color: $white;
+                            background: $green;
+                            font-weight: 800;
+                            font-size: 15px;
+                            line-height: 20px;
+                            border: 1px solid $green;
+                            cursor: pointer;
+                            transition: all 350ms ease;
+                            text-transform: none;
+    
+                            &:before {
+                                content: "";
+                                width: 0;
+                             }
+                       
+                             &:after {
+                                content: "";
+                                width: 0;
+                             }
+    
+                            
+    
+                            &:hover{
+                                box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
+                                color: $green;
+                                background: $white; 
+                                letter-spacing: 0px;
+                                &:before,
+                                &:after {
+                                    width: 0;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
+}
+
+.active-header{
+    position: fixed;
+    margin-top: -15px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 10%);
+    background: $white;
 }
 // header css end //
 
@@ -123,7 +257,7 @@ header{
 
 // article css start //
 article{
-    padding: 136px 76px 149px 76px;
+    padding: 112px 76px 149px 76px;
     position: relative;
     
     .try-now{
@@ -167,6 +301,7 @@ article{
                 background-size: 300%;
 
                 &:hover{
+                    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
                     color: $green;
                     background-position: 100%;
                 }
@@ -196,6 +331,7 @@ article{
                 letter-spacing: 2.1px;
 
                 &:hover{
+                    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
                     color: $white;
                     background: $green; 
                         
@@ -505,6 +641,7 @@ article{
                 border: none;
 
                 &:hover{
+                    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
                     color: $green;
                     background: $white; 
                         
@@ -588,11 +725,11 @@ article{
 footer{
     padding: 0 76px;
     display: flex;
+    justify-content: space-between;
     padding-bottom: 64px;
     border-bottom: 2px solid #DBDBDB;
 
     .logo-footer{
-        margin-right: 252px;
 
         img{
             width: 172px;
@@ -600,29 +737,33 @@ footer{
         }
     }
 
-    .colum{
-        margin-right: 57px;
+    .colum-wrap{
 
-        &:last-child{
-            margin: 0;
-        }
-
-        ul{
-            margin: 0;
-            padding: 0;
-
-            li{
-                margin-bottom: 10px;
-
-                a{
-                    text-decoration: none;
-                    font-weight: bold;
-                    font-size: 19px;
-                    line-height: 22px;
-                    color: $black;
-
-                    &:hover{
-                        color: $green;
+        display: flex;
+        .colum{
+            margin-right: 57px;
+    
+            &:last-child{
+                margin: 0;
+            }
+    
+            ul{
+                margin: 0;
+                padding: 0;
+    
+                li{
+                    margin-bottom: 10px;
+    
+                    a{
+                        text-decoration: none;
+                        font-weight: bold;
+                        font-size: 19px;
+                        line-height: 22px;
+                        color: $black;
+    
+                        &:hover{
+                            color: $green;
+                        }
                     }
                 }
             }
@@ -635,27 +776,31 @@ footer{
     display: flex;
     margin-top: 49px;
     margin-bottom: 48px;
+    justify-content: space-between;
 
     p{
         font-weight: bold;
         font-size: 15px;
         line-height: 18px;
-        margin-right: 140px;
     }
 
-    a{
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 18px; 
-        text-decoration: none;
-        color: $black;
+    .tern-link{
+        display: flex;
 
-        &:hover{
-            color: $green;
-        }
-
-        &.term{
-            margin-right: 35px;
+        a{
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px; 
+            text-decoration: none;
+            color: $black;
+    
+            &:hover{
+                color: $green;
+            }
+    
+            &.term{
+                margin-right: 35px;
+            }
         }
     }
 }
@@ -671,37 +816,203 @@ footer{
     }
 
     header{
-
-        .logo{
-            img{
-                width: 195px;
-                height: 44px;
+        width: 100%;
+        transition: all 500ms ease;
+    
+        #header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 21px;
+        
+            .logo{
+                img{
+                    width: 195px;
+                    height: 44px;
+                }
             }
-        }
-
-        nav{
-            ul{
-                li{
-                    margin-left: 14px;
-                    padding: 4px 13px;
-                    border-bottom: 4px solid $green;
-    
-                    &.sign-up{
-                        border: none;
-                        padding: 0;
-                        margin-left: 22px;
-                        
-                        button{
-                            font-size: 16px;
+        
+            nav{
+                ul{
+                    display: flex;
+                    margin-bottom: 0;
+                    align-items: center;
+        
+                    li{
+                        margin-left: 11px;
+                        padding: 3px 4px;
+        
+                        button {
+                            width: 110px;
+                            height: 41px;
+                            //background-image: linear-gradient(90deg,$c-02, $c-04);
+                            background-color: transparent;
+                            margin: 0;
+                            position: relative;
+                            overflow: hidden;
+                            letter-spacing: 1px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            transition: all 0.3s ease;
+                            cursor: pointer;
+                            border:0;
+                      
+                            &:before {
+                               content: "";
+                               position: absolute;
+                               width: 0;
+                               height: 3px;
+                               background-color: $green;
+                               transition: all 0.3s 0.2s ease;
+                               left: 0;
+                               top: 0;
+                            }
+                      
+                            &:after {
+                               content: "";
+                               position: absolute;
+                               width: 100%;
+                               height: 3px;
+                               background-color: $green;
+                               transition: all 0.3s ease;
+                               right: 0;
+                               bottom: 0;
+                            }
+                      
+                            a {
+                               width: 100%;
+                               height: 100%;
+                               color: $black;
+                               font-weight: 800;
+                                font-size: 14px;
+                               position: absolute;
+                               left: 0;
+                               top: 0;
+                               display: flex;
+                               align-items: center;
+                               justify-content: center;
+                               margin:0;
+                               padding:0;
+                               z-index:1;
+                               
+                               &:before {
+                                  content: "";
+                                  position: absolute;
+                                  width: 3px;
+                                  height: 0;
+                                  background-color: $green;
+                                  transition: all 0.3s 0.4s ease;
+                                  right: 0;
+                                  top: 0;
+                               }
+                      
+                               &:after {
+                                  content: "";
+                                  position: absolute;
+                                  width: 3px;
+                                  height: 0;
+                                  background-color: $green;
+                                  transition: all 0.3s ease;
+                                  left: 0;
+                                  bottom: 0;
+                               }
+        
+                               &:hover{
+                                   text-decoration: none;
+                                   color: $dark-green;
+                               }
+                            }
+                            
+                           
+                      
+                            &:hover {
+                               letter-spacing: 2px;
+                               
+                               &:before,
+                               &:after {
+                                  width: 100%;
+                               }
+                              
+                      
+                               a {
+                                  z-index:1;
+                                  &:before,
+                                  &:after {
+                                     height: 100%;
+                                  }
+                               }
+                               
+                               span {
+                                  height: 100%;
+                                  top:0;
+                               }
+                            }
+                         }
+                      
+                         button:active {
+                            outline: none;
+                            border: none;
+                         }
+                         button:focus {
+                            outline: 0;
+                         }
+        
+                         &.sign-up{
+                            border: none;
+                            padding: 0;
+                            margin-left: 22px;
+                            
+                            button{
+                                width: 168px;
+                                height: 41px;
+                                color: $white;
+                                background: $green;
+                                font-weight: 800;
+                                font-size: 15px;
+                                line-height: 20px;
+                                border: 1px solid $green;
+                                cursor: pointer;
+                                transition: all 350ms ease;
+                                text-transform: none;
+        
+                                &:before {
+                                    content: "";
+                                    width: 0;
+                                 }
+                           
+                                 &:after {
+                                    content: "";
+                                    width: 0;
+                                 }
+        
+                                
+        
+                                &:hover{
+                                    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
+                                    color: $green;
+                                    background: $white; 
+                                    letter-spacing: 0px;
+                                    &:before,
+                                    &:after {
+                                        width: 0;
+                                    }
+                                }
+                            }
                         }
-                    }
-    
-                    a{
-                        font-size: 16px;
                     }
                 }
             }
         }
+    }
+    
+    .active-header{
+        position: fixed;
+        margin-top: -15px;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 10%);
+        background: $white;
     }
 
     article{
@@ -972,7 +1283,6 @@ footer{
         border-bottom: 2px solid #DBDBDB;
     
         .logo-footer{
-            margin-right: 252px;
     
             img{
                 width: 172px;
@@ -1044,12 +1354,11 @@ footer{
                 li{
                     margin-left: 11px;
                     padding: 3px 12px;
-                    border-bottom: 3.5px solid $green;
     
                     &.sign-up{
                         border: none;
                         padding: 0;
-                        margin-left: 22px;
+                        margin-left: 10px;
                         
                         button{
                             font-size: 15px;
@@ -1346,8 +1655,7 @@ footer{
         border-bottom: 2px solid #DBDBDB;
     
         .logo-footer{
-            margin-right: 214px;
-    
+
             img{
                 width: 172px;
                 height: 39px;
@@ -1422,7 +1730,6 @@ footer{
                 li{
                     margin-left: 11px;
                     padding: 1px 5px;
-                    border-bottom: 3px solid $green;
     
                     &.sign-up{
                         border: none;
@@ -1727,7 +2034,6 @@ footer{
         border-bottom: 2px solid #DBDBDB;
     
         .logo-footer{
-            margin-right: 130px;
     
             img{
                 width: 113px;
@@ -1801,7 +2107,6 @@ footer{
                 li{
                     margin-left: 11px;
                     padding: 1px 5px;
-                    border-bottom: 3px solid $green;
     
                     &.sign-up{
                         border: none;
@@ -2107,7 +2412,6 @@ footer{
         border-bottom: 2px solid #DBDBDB;
     
         .logo-footer{
-            margin-right: 130px;
     
             img{
                 width: 113px;
@@ -2504,7 +2808,6 @@ footer{
         border-bottom: 2px solid #DBDBDB;
     
         .logo-footer{
-            margin-right: 130px;
     
             img{
                 width: 113px;

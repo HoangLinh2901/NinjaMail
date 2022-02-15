@@ -84,57 +84,169 @@ button:focus {
 }
 
 header {
+  width: 100%;
+  transition: all 500ms ease;
+}
+header #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 21px;
+  padding-top: 15px;
+  padding-bottom: 21px;
 }
-header nav ul {
+header #header nav ul {
   display: flex;
   margin-bottom: 0;
   align-items: center;
 }
-header nav ul li {
-  margin-left: 15px;
-  padding: 6px 15px;
-  border-bottom: 5px solid #4BA87D;
+header #header nav ul li {
+  margin-left: 11px;
+  padding: 3px 4px;
 }
-header nav ul li.sign-up {
+header #header nav ul li button {
+  width: 110px;
+  height: 41px;
+  background-color: transparent;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 0;
+}
+header #header nav ul li button:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #4BA87D;
+  transition: all 0.3s 0.2s ease;
+  left: 0;
+  top: 0;
+}
+header #header nav ul li button:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #4BA87D;
+  transition: all 0.3s ease;
+  right: 0;
+  bottom: 0;
+}
+header #header nav ul li button a {
+  width: 100%;
+  height: 100%;
+  color: #000000;
+  font-weight: 800;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+header #header nav ul li button a:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 0;
+  background-color: #4BA87D;
+  transition: all 0.3s 0.4s ease;
+  right: 0;
+  top: 0;
+}
+header #header nav ul li button a:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 0;
+  background-color: #4BA87D;
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+}
+header #header nav ul li button a:hover {
+  text-decoration: none;
+  color: #37795a;
+}
+header #header nav ul li button:hover {
+  letter-spacing: 2px;
+}
+header #header nav ul li button:hover:before, header #header nav ul li button:hover:after {
+  width: 100%;
+}
+header #header nav ul li button:hover a {
+  z-index: 1;
+}
+header #header nav ul li button:hover a:before, header #header nav ul li button:hover a:after {
+  height: 100%;
+}
+header #header nav ul li button:hover span {
+  height: 100%;
+  top: 0;
+}
+header #header nav ul li button:active {
+  outline: none;
+  border: none;
+}
+header #header nav ul li button:focus {
+  outline: 0;
+}
+header #header nav ul li.sign-up {
   border: none;
   padding: 0;
   margin-left: 22px;
 }
-header nav ul li.sign-up button {
-  padding: 11px 20px;
+header #header nav ul li.sign-up button {
+  width: 168px;
+  height: 41px;
   color: #FFFFFF;
   background: #4BA87D;
   font-weight: 800;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 20px;
   border: 1px solid #4BA87D;
   cursor: pointer;
   transition: all 350ms ease;
+  text-transform: none;
 }
-header nav ul li.sign-up button:hover {
+header #header nav ul li.sign-up button:before {
+  content: "";
+  width: 0;
+}
+header #header nav ul li.sign-up button:after {
+  content: "";
+  width: 0;
+}
+header #header nav ul li.sign-up button:hover {
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
   color: #4BA87D;
   background: #FFFFFF;
+  letter-spacing: 0px;
 }
-header nav ul li a {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 17px;
-  line-height: 20px;
-  color: #000000;
-  text-decoration: none;
-  transition: all 350ms ease;
+header #header nav ul li.sign-up button:hover:before, header #header nav ul li.sign-up button:hover:after {
+  width: 0;
 }
-header nav ul li a:hover {
-  color: #4BA87D;
-  text-decoration: none;
+
+.active-header {
+  position: fixed;
+  margin-top: -15px;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
 }
 
 article {
-  padding: 136px 76px 149px 76px;
+  padding: 112px 76px 149px 76px;
   position: relative;
 }
 article .try-now {
@@ -173,6 +285,7 @@ article .try-now .try-btn .try {
   background-size: 300%;
 }
 article .try-now .try-btn .try:hover {
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
   color: #4BA87D;
   background-position: 100%;
 }
@@ -198,6 +311,7 @@ article .try-now .try-btn .demo {
   letter-spacing: 2.1px;
 }
 article .try-now .try-btn .demo:hover {
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
   color: #FFFFFF;
   background: #4BA87D;
 }
@@ -443,6 +557,7 @@ article img {
   border: none;
 }
 .contact .send-email .email-input button:hover {
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
   color: #4BA87D;
   background: #FFFFFF;
 }
@@ -505,37 +620,38 @@ article img {
 footer {
   padding: 0 76px;
   display: flex;
+  justify-content: space-between;
   padding-bottom: 64px;
   border-bottom: 2px solid #DBDBDB;
-}
-footer .logo-footer {
-  margin-right: 252px;
 }
 footer .logo-footer img {
   width: 172px;
   height: 39px;
 }
-footer .colum {
+footer .colum-wrap {
+  display: flex;
+}
+footer .colum-wrap .colum {
   margin-right: 57px;
 }
-footer .colum:last-child {
+footer .colum-wrap .colum:last-child {
   margin: 0;
 }
-footer .colum ul {
+footer .colum-wrap .colum ul {
   margin: 0;
   padding: 0;
 }
-footer .colum ul li {
+footer .colum-wrap .colum ul li {
   margin-bottom: 10px;
 }
-footer .colum ul li a {
+footer .colum-wrap .colum ul li a {
   text-decoration: none;
   font-weight: bold;
   font-size: 19px;
   line-height: 22px;
   color: #000000;
 }
-footer .colum ul li a:hover {
+footer .colum-wrap .colum ul li a:hover {
   color: #4BA87D;
 }
 
@@ -544,24 +660,27 @@ footer .colum ul li a:hover {
   display: flex;
   margin-top: 49px;
   margin-bottom: 48px;
+  justify-content: space-between;
 }
 .copy-right p {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
-  margin-right: 140px;
 }
-.copy-right a {
+.copy-right .tern-link {
+  display: flex;
+}
+.copy-right .tern-link a {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
   text-decoration: none;
   color: #000000;
 }
-.copy-right a:hover {
+.copy-right .tern-link a:hover {
   color: #4BA87D;
 }
-.copy-right a.term {
+.copy-right .tern-link a.term {
   margin-right: 35px;
 }
 
@@ -570,25 +689,170 @@ footer .colum ul li a:hover {
     padding: 0 80px;
   }
 
-  header .logo img {
+  header {
+    width: 100%;
+    transition: all 500ms ease;
+  }
+  header #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 21px;
+  }
+  header #header .logo img {
     width: 195px;
     height: 44px;
   }
-  header nav ul li {
-    margin-left: 14px;
-    padding: 4px 13px;
-    border-bottom: 4px solid #4BA87D;
+  header #header nav ul {
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
   }
-  header nav ul li.sign-up {
+  header #header nav ul li {
+    margin-left: 11px;
+    padding: 3px 4px;
+  }
+  header #header nav ul li button {
+    width: 110px;
+    height: 41px;
+    background-color: transparent;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 0;
+  }
+  header #header nav ul li button:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #4BA87D;
+    transition: all 0.3s 0.2s ease;
+    left: 0;
+    top: 0;
+  }
+  header #header nav ul li button:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #4BA87D;
+    transition: all 0.3s ease;
+    right: 0;
+    bottom: 0;
+  }
+  header #header nav ul li button a {
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    font-weight: 800;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  header #header nav ul li button a:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: #4BA87D;
+    transition: all 0.3s 0.4s ease;
+    right: 0;
+    top: 0;
+  }
+  header #header nav ul li button a:after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: #4BA87D;
+    transition: all 0.3s ease;
+    left: 0;
+    bottom: 0;
+  }
+  header #header nav ul li button a:hover {
+    text-decoration: none;
+    color: #37795a;
+  }
+  header #header nav ul li button:hover {
+    letter-spacing: 2px;
+  }
+  header #header nav ul li button:hover:before, header #header nav ul li button:hover:after {
+    width: 100%;
+  }
+  header #header nav ul li button:hover a {
+    z-index: 1;
+  }
+  header #header nav ul li button:hover a:before, header #header nav ul li button:hover a:after {
+    height: 100%;
+  }
+  header #header nav ul li button:hover span {
+    height: 100%;
+    top: 0;
+  }
+  header #header nav ul li button:active {
+    outline: none;
+    border: none;
+  }
+  header #header nav ul li button:focus {
+    outline: 0;
+  }
+  header #header nav ul li.sign-up {
     border: none;
     padding: 0;
     margin-left: 22px;
   }
-  header nav ul li.sign-up button {
-    font-size: 16px;
+  header #header nav ul li.sign-up button {
+    width: 168px;
+    height: 41px;
+    color: #FFFFFF;
+    background: #4BA87D;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 20px;
+    border: 1px solid #4BA87D;
+    cursor: pointer;
+    transition: all 350ms ease;
+    text-transform: none;
   }
-  header nav ul li a {
-    font-size: 16px;
+  header #header nav ul li.sign-up button:before {
+    content: "";
+    width: 0;
+  }
+  header #header nav ul li.sign-up button:after {
+    content: "";
+    width: 0;
+  }
+  header #header nav ul li.sign-up button:hover {
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
+    color: #4BA87D;
+    background: #FFFFFF;
+    letter-spacing: 0px;
+  }
+  header #header nav ul li.sign-up button:hover:before, header #header nav ul li.sign-up button:hover:after {
+    width: 0;
+  }
+
+  .active-header {
+    position: fixed;
+    margin-top: -15px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
   }
 
   article .try-now h3 {
@@ -797,9 +1061,6 @@ footer .colum ul li a:hover {
     padding-bottom: 64px;
     border-bottom: 2px solid #DBDBDB;
   }
-  footer .logo-footer {
-    margin-right: 252px;
-  }
   footer .logo-footer img {
     width: 172px;
     height: 39px;
@@ -848,12 +1109,11 @@ footer .colum ul li a:hover {
   header nav ul li {
     margin-left: 11px;
     padding: 3px 12px;
-    border-bottom: 3.5px solid #4BA87D;
   }
   header nav ul li.sign-up {
     border: none;
     padding: 0;
-    margin-left: 22px;
+    margin-left: 10px;
   }
   header nav ul li.sign-up button {
     font-size: 15px;
@@ -1081,9 +1341,6 @@ footer .colum ul li a:hover {
     padding-bottom: 64px;
     border-bottom: 2px solid #DBDBDB;
   }
-  footer .logo-footer {
-    margin-right: 214px;
-  }
   footer .logo-footer img {
     width: 172px;
     height: 39px;
@@ -1132,7 +1389,6 @@ footer .colum ul li a:hover {
   header nav ul li {
     margin-left: 11px;
     padding: 1px 5px;
-    border-bottom: 3px solid #4BA87D;
   }
   header nav ul li.sign-up {
     border: none;
@@ -1367,9 +1623,6 @@ footer .colum ul li a:hover {
     padding-bottom: 64px;
     border-bottom: 2px solid #DBDBDB;
   }
-  footer .logo-footer {
-    margin-right: 130px;
-  }
   footer .logo-footer img {
     width: 113px;
     height: 28px;
@@ -1418,7 +1671,6 @@ footer .colum ul li a:hover {
   header nav ul li {
     margin-left: 11px;
     padding: 1px 5px;
-    border-bottom: 3px solid #4BA87D;
   }
   header nav ul li.sign-up {
     border: none;
@@ -1652,9 +1904,6 @@ footer .colum ul li a:hover {
     padding: 0 47px;
     padding-bottom: 64px;
     border-bottom: 2px solid #DBDBDB;
-  }
-  footer .logo-footer {
-    margin-right: 130px;
   }
   footer .logo-footer img {
     width: 113px;
@@ -1960,9 +2209,6 @@ footer .colum ul li a:hover {
     padding: 0 47px;
     padding-bottom: 64px;
     border-bottom: 2px solid #DBDBDB;
-  }
-  footer .logo-footer {
-    margin-right: 130px;
   }
   footer .logo-footer img {
     width: 113px;
