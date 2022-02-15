@@ -820,9 +820,6 @@ footer{
         transition: all 500ms ease;
     
         #header{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding-top: 15px;
             padding-bottom: 21px;
         
@@ -835,9 +832,7 @@ footer{
         
             nav{
                 ul{
-                    display: flex;
                     margin-bottom: 0;
-                    align-items: center;
         
                     li{
                         margin-left: 11px;
@@ -846,157 +841,47 @@ footer{
                         button {
                             width: 110px;
                             height: 41px;
-                            //background-image: linear-gradient(90deg,$c-02, $c-04);
-                            background-color: transparent;
-                            margin: 0;
-                            position: relative;
-                            overflow: hidden;
-                            letter-spacing: 1px;
-                            font-weight: 500;
-                            text-transform: uppercase;
-                            transition: all 0.3s ease;
-                            cursor: pointer;
+                            letter-spacing: 0.825px;
                             border:0;
                       
-                            &:before {
-                               content: "";
-                               position: absolute;
-                               width: 0;
-                               height: 3px;
-                               background-color: $green;
-                               transition: all 0.3s 0.2s ease;
-                               left: 0;
-                               top: 0;
-                            }
-                      
-                            &:after {
-                               content: "";
-                               position: absolute;
-                               width: 100%;
-                               height: 3px;
-                               background-color: $green;
-                               transition: all 0.3s ease;
-                               right: 0;
-                               bottom: 0;
-                            }
-                      
                             a {
-                               width: 100%;
-                               height: 100%;
-                               color: $black;
                                font-weight: 800;
                                 font-size: 14px;
-                               position: absolute;
                                left: 0;
                                top: 0;
-                               display: flex;
-                               align-items: center;
-                               justify-content: center;
                                margin:0;
                                padding:0;
-                               z-index:1;
                                
                                &:before {
-                                  content: "";
-                                  position: absolute;
                                   width: 3px;
-                                  height: 0;
-                                  background-color: $green;
-                                  transition: all 0.3s 0.4s ease;
                                   right: 0;
                                   top: 0;
                                }
                       
                                &:after {
-                                  content: "";
-                                  position: absolute;
                                   width: 3px;
-                                  height: 0;
-                                  background-color: $green;
-                                  transition: all 0.3s ease;
                                   left: 0;
                                   bottom: 0;
                                }
-        
-                               &:hover{
-                                   text-decoration: none;
-                                   color: $dark-green;
-                               }
-                            }
-                            
-                           
-                      
-                            &:hover {
-                               letter-spacing: 2px;
-                               
-                               &:before,
-                               &:after {
-                                  width: 100%;
-                               }
-                              
-                      
-                               a {
-                                  z-index:1;
-                                  &:before,
-                                  &:after {
-                                     height: 100%;
-                                  }
-                               }
-                               
-                               span {
-                                  height: 100%;
-                                  top:0;
-                               }
                             }
                          }
-                      
-                         button:active {
-                            outline: none;
-                            border: none;
-                         }
-                         button:focus {
-                            outline: 0;
-                         }
+
         
                          &.sign-up{
-                            border: none;
                             padding: 0;
                             margin-left: 22px;
                             
                             button{
                                 width: 168px;
                                 height: 41px;
-                                color: $white;
-                                background: $green;
                                 font-weight: 800;
                                 font-size: 15px;
                                 line-height: 20px;
                                 border: 1px solid $green;
-                                cursor: pointer;
-                                transition: all 350ms ease;
-                                text-transform: none;
-        
-                                &:before {
-                                    content: "";
-                                    width: 0;
-                                 }
-                           
-                                 &:after {
-                                    content: "";
-                                    width: 0;
-                                 }
-        
-                                
         
                                 &:hover{
                                     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
-                                    color: $green;
-                                    background: $white; 
                                     letter-spacing: 0px;
-                                    &:before,
-                                    &:after {
-                                        width: 0;
-                                    }
                                 }
                             }
                         }
@@ -1007,12 +892,9 @@ footer{
     }
     
     .active-header{
-        position: fixed;
         margin-top: -15px;
         width: 100%;
-        z-index: 1000;
         box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 10%);
-        background: $white;
     }
 
     article{
@@ -1290,17 +1172,34 @@ footer{
             }
         }
     
-        .colum{
-            margin-right: 41px;
-    
-            ul{
-    
-                li{
-                    margin-bottom: 9px;
-    
-                    a{
-                        font-size: 18px;
-                        line-height: 20px;
+        .colum-wrap{
+
+            display: flex;
+            .colum{
+                margin-right: 57px;
+        
+                &:last-child{
+                    margin: 0;
+                }
+        
+                ul{
+                    margin: 0;
+                    padding: 0;
+        
+                    li{
+                        margin-bottom: 9px;
+        
+                        a{
+                            text-decoration: none;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 20px;
+                            color: $black;
+        
+                            &:hover{
+                                color: $green;
+                            }
+                        }
                     }
                 }
             }
@@ -1318,12 +1217,17 @@ footer{
             margin-right: 140px;
         }
     
-        a{
-            font-size: 13px;
-            line-height: 18px; 
+        .tern-link{
+            display: flex;
     
-            &.term{
-                margin-right: 35px;
+            a{
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 18px; 
+
+                &.term{
+                    margin-right: 35px;
+                }
             }
         }
     }
@@ -1340,38 +1244,85 @@ footer{
     }
 
     header{
-        padding-top: 20px;
-
-        .logo{
-            img{
-                width: 170px;
-                height: 35px;
+        width: 100%;
+        transition: all 500ms ease;
+    
+        #header{
+            padding-top: 15px;
+            padding-bottom: 21px;
+        
+            .logo{
+                img{
+                    width: 170px;
+                    height: 35px;
+                }
             }
-        }
+        
+            nav{
+                ul{
+                    margin-bottom: 0;
+        
+                    li{
+                        margin-left: 11px;
+                        padding: 3px 4px;
+        
+                        button {
+                            width: 95px;
+                            height: 35px;
+                            letter-spacing: 0.825px;
+                            border:0;
+                      
+                            a {
+                               font-weight: 800;
+                                font-size: 13px;
+                               left: 0;
+                               top: 0;
+                               margin:0;
+                               padding:0;
+                               
+                               &:before {
+                                  width: 3px;
+                                  right: 0;
+                                  top: 0;
+                               }
+                      
+                               &:after {
+                                  width: 3px;
+                                  left: 0;
+                                  bottom: 0;
+                               }
+                            }
+                         }
 
-        nav{
-            ul{
-                li{
-                    margin-left: 11px;
-                    padding: 3px 12px;
-    
-                    &.sign-up{
-                        border: none;
-                        padding: 0;
-                        margin-left: 10px;
-                        
-                        button{
-                            font-size: 15px;
-                            padding: 9px 16px;
+        
+                         &.sign-up{
+                            padding: 0;
+                            margin-left: 17px;
+                            
+                            button{
+                                width: 135px;
+                                height: 35px;
+                                font-weight: 800;
+                                font-size: 13px;
+                                line-height: 20px;
+                                border: 1px solid $green;
+        
+                                &:hover{
+                                    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
+                                    letter-spacing: 0px;
+                                }
+                            }
                         }
-                    }
-    
-                    a{
-                        font-size: 15px;
                     }
                 }
             }
         }
+    }
+    
+    .active-header{
+        margin-top: -15px;
+        width: 100%;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 10%);
     }
 
     article{
@@ -1662,17 +1613,34 @@ footer{
             }
         }
     
-        .colum{
-            margin-right: 41px;
-    
-            ul{
-    
-                li{
-                    margin-bottom: 9px;
-    
-                    a{
-                        font-size: 15px;
-                        line-height: 18px;
+        .colum-wrap{
+
+            display: flex;
+            .colum{
+                margin-right: 57px;
+        
+                &:last-child{
+                    margin: 0;
+                }
+        
+                ul{
+                    margin: 0;
+                    padding: 0;
+        
+                    li{
+                        margin-bottom: 9px;
+        
+                        a{
+                            text-decoration: none;
+                            font-weight: bold;
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: $black;
+        
+                            &:hover{
+                                color: $green;
+                            }
+                        }
                     }
                 }
             }
@@ -1690,12 +1658,17 @@ footer{
             margin-right: 142px;
         }
     
-        a{
-            font-size: 12px;
-            line-height: 18px; 
+        .tern-link{
+            display: flex;
     
-            &.term{
-                margin-right: 35px;
+            a{
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 18px; 
+
+                &.term{
+                    margin-right: 35px;
+                }
             }
         }
     }
@@ -1716,38 +1689,86 @@ footer{
     }
 
     header{
-        padding-top: 18px;
-
-        .logo{
-            img{
-                width: 120px;
-                height: 32px;
+        width: 100%;
+        transition: all 500ms ease;
+    
+        #header{
+            padding-top: 15px;
+            padding-bottom: 18px;
+        
+            .logo{
+                img{
+                    width: 120px;
+                    height: 32px;
+                }
             }
-        }
+        
+            nav{
+                ul{
+                    margin-bottom: 0;
+                    padding: 0;
+        
+                    li{
+                        margin-left: 6px;
+                        padding: 3px 4px;
+        
+                        button {
+                            width: 87px;
+                            height: 30px;
+                            letter-spacing: 0.825px;
+                            border:0;
+                      
+                            a {
+                               font-weight: 800;
+                                font-size: 12px;
+                               left: 0;
+                               top: 0;
+                               margin:0;
+                               padding:0;
+                               
+                               &:before {
+                                  width: 3px;
+                                  right: 0;
+                                  top: 0;
+                               }
+                      
+                               &:after {
+                                  width: 3px;
+                                  left: 0;
+                                  bottom: 0;
+                               }
+                            }
+                         }
 
-        nav{
-            ul{
-                li{
-                    margin-left: 11px;
-                    padding: 1px 5px;
-    
-                    &.sign-up{
-                        border: none;
-                        padding: 0;
-                        margin-left: 16px;
-                        
-                        button{
-                            font-size: 12px;
-                            padding: 6px 14px;
+        
+                         &.sign-up{
+                            padding: 0;
+                            margin-left: 11px;
+                            
+                            button{
+                                width: 127px;
+                                height: 30px;
+                                font-weight: 800;
+                                font-size: 12px;
+                                line-height: 20px;
+                                border: 1px solid $green;
+        
+                                &:hover{
+                                    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
+                                    letter-spacing: 0px;
+                                }
+                            }
                         }
-                    }
-    
-                    a{
-                        font-size: 12px;
                     }
                 }
             }
         }
+    }
+    
+    .active-header{
+        margin-top: -10px;
+        width: 100%;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 10%);
     }
 
     article{
@@ -2041,17 +2062,34 @@ footer{
             }
         }
     
-        .colum{
-            margin-right: 39px;
-    
-            ul{
-    
-                li{
-                    margin-bottom: 7px;
-    
-                    a{
-                        font-size: 12px;
-                        line-height: 14px;
+        .colum-wrap{
+
+            display: flex;
+            .colum{
+                margin-right: 45px;
+        
+                &:last-child{
+                    margin: 0;
+                }
+        
+                ul{
+                    margin: 0;
+                    padding: 0;
+        
+                    li{
+                        margin-bottom: 7px;
+        
+                        a{
+                            text-decoration: none;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: $black;
+        
+                            &:hover{
+                                color: $green;
+                            }
+                        }
                     }
                 }
             }
@@ -2069,12 +2107,17 @@ footer{
             margin-right: 93px;
         }
     
-        a{
-            font-size: 9px;
-            line-height: 11px; 
+        .tern-link{
+            display: flex;
     
-            &.term{
-                margin-right: 30px;
+            a{
+                font-weight: bold;
+                font-size: 9px;
+                line-height: 11px; 
+
+                &.term{
+                    margin-right: 30px;
+                }
             }
         }
     }
@@ -2093,34 +2136,48 @@ footer{
     }
 
     header{
-        padding-top: 18px;
-
-        .logo{
-            img{
-                width: 120px;
-                height: 32px;
+        width: 100%;
+        transition: all 500ms ease;
+    
+        #header{
+            padding-top: 15px;
+            padding-bottom: 18px;
+        
+            .logo{
+                img{
+                    width: 120px;
+                    height: 32px;
+                }
             }
-        }
+        
+            nav{
+                ul{
+                    margin-bottom: 0;
+                    padding: 0;
+        
+                    li{
+                        display: none;
 
-        nav{
-            ul{
-                li{
-                    margin-left: 11px;
-                    padding: 1px 5px;
-    
-                    &.sign-up{
-                        border: none;
-                        padding: 0;
-                        margin-left: 16px;
-                        
-                        button{
-                            font-size: 12px;
-                            padding: 6px 14px;
+        
+                         &.sign-up{
+                             display: block;
+                            padding: 0;
+                            margin-left: 11px;
+                            
+                            button{
+                                width: 127px;
+                                height: 30px;
+                                font-weight: 800;
+                                font-size: 12px;
+                                line-height: 20px;
+                                border: 1px solid $green;
+        
+                                &:hover{
+                                    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
+                                    letter-spacing: 0px;
+                                }
+                            }
                         }
-                    }
-    
-                    a{
-                        font-size: 12px;
                     }
                 }
             }
@@ -2128,18 +2185,20 @@ footer{
     }
 
     article{
-        padding: 90px 29px 97px 29px;
+        padding: 44px 0px 56px 0px;
 
         .try-now{
+            width: 58%;
+
             h3{
-                font-size: 38px;
-                line-height: 46px;
+                font-size: 30px;
+                line-height: 36px;
             }
     
             p{                 
                 font-size: 12px;
-                line-height: 16px;
-                margin-top: 16px;
+                line-height: 15px;
+                margin-top: 17px;
                 margin-bottom: 30px;
 
             }
@@ -2147,18 +2206,18 @@ footer{
             .try-btn{
     
                 .try{
-                    width: 131px;
-                    height: 42px;
-                    font-size: 13px;
+                    width: 125px;
+                    height: 35px;
+                    font-size: 12px;
                     line-height: 15px;
                     border: 3px solid #4BA87D;
-                    margin-right: 35px;
+                    margin-right: 18px;
                 }
     
                 .demo{
-                    width: 131px;
-                    height: 42px;
-                    font-size: 13px;
+                    width: 125px;
+                    height: 35px;
+                    font-size: 12px;
                     line-height: 15px;
                     border: 3px solid $green;
                 }
@@ -2167,37 +2226,39 @@ footer{
 
         img{
             right: 0px;
-            top: 60px;
-            width: 445px;
-            height: 250px;
+            top: 30px;
+            width: 370px;
+            height: 224px;
         }
     }
 
 
     .video-detail{
-        padding: 85px 0 114px 0;
+        padding: 50px 0 70px 0;
         
         .reach-more{
             top: 40%;
             bottom: 40%;
+            left: 20%;
+            right: 20%;
 
 
             h4{
-                font-size: 35px;
-                line-height: 51px;
-                margin-bottom: 41px;
+                font-size: 28px;
+                line-height: 35px;
+                margin-bottom: 28px;
             }
 
             button{
-                width: 132px;
-                height: 42px;
-                font-size: 13px;
+                width: 125px;
+                height: 35px;
+                font-size: 12px;
                 line-height: 15px;
             }
         }
 
         .video-bg{
-            max-width: 616px;
+            max-width: 450px;
             width: 100%;
             min-height: 100%;
             position: relative;
@@ -2207,31 +2268,35 @@ footer{
     }
 
     .news{
-        margin-top: -171px;
-        padding-top: 117px;
-        padding-bottom: 0px;
+        margin-top: -113px;
+        padding-top: 84px;
+        padding-bottom: 14px;
     
         
         .new-wrap{
             transform: skew(0deg, 10deg);
+            flex-wrap: wrap;
+            
             
             .down1{
-                margin-bottom: 132px;
+                margin-bottom: 29px;
             }
     
-            .down2{        
-                margin-top: 53px;
-                margin-bottom: 84px;
+            .down2{           
+                margin-bottom: -41px;
+                margin-top: 75px;
             }
     
             .new{
+                width: 200px;
+
 
                 .new-img{
-                    width: 209px;
+                    width: 200px;
                 }
             
                 .new-detail{
-                    width: 209px;
+                    width: 200px;
                     padding: 17px 24px;;
             
                     p{
@@ -2240,27 +2305,27 @@ footer{
                         margin-bottom: 7px;
                     }
             
-                    a{
+                    a{  
                         font-size: 12px;
-                        line-height: 14px;
+                        line-height: 12px;
                     }
                 }
             }
     
             .ads{
-                width: 228px;
-                padding-top: 138px;
+                width: 300px;
+                padding-top: 30px;
         
                 h4{    
-                    font-size: 28px;
-                    line-height: 31px;
-                    margin-bottom: 17px;
+                    font-size: 24px;
+                    line-height: 27px;
+                    margin-bottom: 13px;
                 }
         
                 p{
                     width: 92%;
                     font-size: 12px;
-                    line-height: 16px;
+                    line-height: 13px;
                 }
             }
         }
@@ -2268,14 +2333,15 @@ footer{
 
 
     .contact{
+        margin-top: 20px;
     
         .member{
     
             .member-img{
     
-                img{
-                    width: 209px;
-                    height: 156px;
+                img{           
+                    width: 180px;
+                    height: 132px;
                 }
     
                 .member-name{
@@ -2297,18 +2363,18 @@ footer{
         }
     
         .slogan{
-            max-width: 545px;
+            max-width: 444px;
             margin-top: 27px;
             margin-bottom: 30px;
     
             h5{
-                font-size: 28px;
-                line-height: 36px;
+                font-size: 26px;
+                line-height: 29px;
             }
         }
     
         .send-email{
-            max-width: 436px;
+            max-width: 372px;
             width: 100%;
     
             .email-input{
@@ -2342,7 +2408,7 @@ footer{
                 }
     
                 button{
-                    max-width: 144px;
+                    max-width: 135px;
                     width: 100%;
                     height: 42px;
                     font-size: 12px;
@@ -2355,26 +2421,31 @@ footer{
         }
     
         .slogan2{
-            max-width: 347px;
+            max-width: 293px;
             width: 100%;
             text-align: center;
-            margin: 0 auto;
-            margin-top: 50px;
-            margin-bottom: 53px;
+            margin: 0 auto;  
+            margin-top: 34px;
+            margin-bottom: 35px;
     
             h5{
-                font-size: 28px;
-                line-height: 36px;
+                font-size: 26px;
+                line-height: 30px;
             }
         }
     
         .logo-brand{
+            flex-wrap: wrap;
+            justify-content: center;
+
             img{
-                width: 104px;
+                width: 142px;
+                margin-bottom: 30px;
+                margin-right: 40px;
             }
 
             .dragon{
-                width: 55px;
+                width: 69px;
             }
 
             max-width: 944px;
@@ -2387,19 +2458,19 @@ footer{
 
     .plan{
         padding: 59px 148px 59px 148px;
-        margin-top: 95px;
-        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-bottom: 30px;
     
         h5{
-            font-size: 42px;
-            line-height: 56px;
-            margin-bottom: 34px;
+            font-size: 38px;
+            line-height: 43px;
+            margin-bottom: 32px;
         }
     
         button{
             width: 131px;
             height: 42px;
-            font-size: 13px;
+            font-size: 12px;
             line-height: 15px;
             letter-spacing: 2.1px;  
         }
@@ -2419,17 +2490,34 @@ footer{
             }
         }
     
-        .colum{
-            margin-right: 39px;
-    
-            ul{
-    
-                li{
-                    margin-bottom: 7px;
-    
-                    a{
-                        font-size: 12px;
-                        line-height: 14px;
+        .colum-wrap{
+
+            display: flex;
+            .colum{
+                margin-right: 20px;
+        
+                &:last-child{
+                    margin: 0;
+                }
+        
+                ul{
+                    margin: 0;
+                    padding: 0;
+        
+                    li{
+                        margin-bottom: 7px;
+        
+                        a{
+                            text-decoration: none;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: $black;
+        
+                            &:hover{
+                                color: $green;
+                            }
+                        }
                     }
                 }
             }
@@ -2447,12 +2535,17 @@ footer{
             margin-right: 93px;
         }
     
-        a{
-            font-size: 9px;
-            line-height: 11px; 
+        .tern-link{
+            display: flex;
     
-            &.term{
-                margin-right: 30px;
+            a{
+                font-weight: bold;
+                font-size: 9px;
+                line-height: 11px; 
+
+                &.term{
+                    margin-right: 30px;
+                }
             }
         }
     }
