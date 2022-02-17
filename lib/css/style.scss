@@ -2998,4 +2998,436 @@ footer{
     }
 }
 
+
+@media (max-width: 430px){
+    .container{
+        padding: 0 15px;
+    }
+
+    header{
+        width: 100%;
+        transition: all 500ms ease;
+    
+        #header{
+            padding-top: 15px;
+            padding-bottom: 18px;
+        
+            .logo{
+                img{
+                    width: 120px;
+                    height: 32px;
+                }
+            }
+        
+            nav{
+                ul{
+                    margin-bottom: 0;
+                    padding: 0;
+        
+                    li{
+                        display: none;
+
+        
+                         &.sign-up{
+                             display: block;
+                            padding: 0;
+                            margin-left: 11px;
+                            
+                            button{
+                                width: 127px;
+                                height: 30px;
+                                font-weight: 800;
+                                font-size: 12px;
+                                line-height: 20px;
+                                border: 1px solid $green;
+        
+                                &:hover{
+                                    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
+                                    letter-spacing: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .active-header{
+        margin-top: -10px;
+        width: 100%;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 10%);
+    }
+
+    article{
+        padding: 30px 0px 30px 0px;
+
+        .try-now{
+            width: 100%;
+            margin-top: 20px;
+
+            h3{ 
+                width: 65%;
+                font-size: 25px;
+                line-height: 33px;
+                margin-left: 10px;
+                margin-bottom: 139px;
+            }
+    
+            p{                 
+                font-size: 13px;
+                line-height: 16px;
+                margin-top: 16px;
+                margin-bottom: 13px;
+
+            }
+    
+            .try-btn{
+                text-align: center;
+
+                .try{
+                    width: 112px;
+                    height: 36px;
+                    font-size: 11px;
+                    line-height: 15px;
+                    border: 2px solid #4BA87D;
+                    margin-right: 20px;
+                }
+    
+                .demo{
+                    width: 112px;
+                    height: 36px;
+                    font-size: 11px;
+                    line-height: 15px;
+                    border: 2px solid $green;
+                }
+            }
+        }
+
+        img{
+            right: 0px;
+            top: 25px;
+            width: 400px;
+            height: 219px;
+        }
+    }
+
+
+    .video-detail{
+        padding: 30px 15px 114px 15px;
+        
+        .reach-more{
+            top: 32%;
+            bottom: 32%;
+            left: 21%;
+            right: 21%;
+
+
+            h4{
+                font-size: 22px;
+                line-height: 29px;
+                margin-bottom: 20px;
+            }
+
+            button{
+                width: 132px;
+                height: 42px;
+                font-size: 11px;
+                line-height: 10px;
+            }
+        }
+
+        .video-bg{
+            max-width: 616px;
+            width: 100%;
+            min-height: 100%;
+            position: relative;
+            z-index: 1;
+            box-shadow:(0px 3px 16px rgba(0, 0, 0, 0.160784));
+        }
+    }
+
+    .news{
+        margin-top: -152px;
+        padding-top: 68px;
+        padding-bottom: 14px;
+    
+        
+        .new-wrap{
+            transform: skew(0deg, 10deg);
+            flex-wrap: wrap;
+            
+            
+            .down1{
+                margin-bottom: 48px;
+            }
+    
+            .down2{           
+                margin-bottom: -41px;
+                margin-top: 75px;
+            }
+    
+            .new{
+                width: 192px;
+
+
+                .new-img{
+                    width: 192px;
+                }
+            
+                .new-detail{
+                    width: 192px;
+                    padding: 17px 24px;;
+            
+                    p{
+                        font-size: 12px;
+                        line-height: 16px;
+                        margin-bottom: 7px;
+                    }
+            
+                    a{  
+                        font-size: 11px;
+                        line-height: 12px;
+                    }
+                }
+            }
+    
+            .ads{
+                width: 248px;
+                padding-top: 49px;
+        
+                h4{    
+                    font-size: 24px;
+                    line-height: 27px;
+                    margin-bottom: 13px;
+                }
+        
+                p{
+                    width: 92%;
+                    font-size: 11px;
+                    line-height: 13px;
+                }
+            }
+        }
+    }
+    
+
+    .contact{
+    
+        .member{
+            margin: 0 -4px;
+            align-items: center;
+            flex-direction: column;
+    
+            .member-img{
+    
+                img{
+                    width: 300px;
+                    height: 190px;                
+                }
+    
+                .member-name{
+                    left: 22px;
+                    bottom: 30px;
+    
+                    h5{
+                        font-size: 22px;
+                        line-height: 26px;
+                        margin: 0;
+                    }
+    
+                    p{
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+    
+        .slogan{
+            max-width: 350px;          
+            margin-top: 12px;
+            margin-bottom: 22px;
+    
+            h5{
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+    
+        .send-email{
+            max-width: 300px;
+            width: 100%;
+    
+            .email-input{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+    
+                .input{
+                    width: 100%;
+
+                    input{                         
+                        width: 100%;
+                        height: 42px;
+                        padding: 12px 16px;
+                        border: 1px solid #9F9F9F;
+                        border-radius: 5px;
+                        margin-right: 0;
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
+
+                    .alert{
+                        margin-top: 4px;
+                        padding: 4px 1.25rem;
+            
+                        p{
+                            font-size: 11px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+    
+                button{
+                    max-width: 144px;
+                    width: 100%;
+                    height: 42px;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 2.1px;
+                    border: none;
+                }
+            }
+    
+            
+        }
+    
+        .slogan2{
+            max-width: 290px;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 53px;
+    
+            h5{
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+    
+        .logo-brand{
+            flex-wrap: wrap;
+            justify-content: center;
+
+            img{
+                width: 104px;
+                margin-bottom: 30px;
+                margin-right: 40px;
+            }
+
+            .dragon{
+                width: 55px;
+            }
+
+            max-width: 944px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0px 45px;
+        }
+    }
+
+
+    .plan{
+        padding: 50px 69px 49px 69px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+    
+        h5{
+            font-size: 36px;
+            line-height: 48px;
+            margin-bottom: 34px;
+        }
+    
+        button{
+            width: 165px;
+            height: 42px;
+            font-size: 11px;
+            line-height: 17px;
+            letter-spacing: 2.1px;  
+        }
+
+        p{
+            font-size: 17px;
+        }
+    }
+
+
+    footer{
+        padding: 0 47px;
+        padding-bottom: 64px;
+        border-bottom: 2px solid #DBDBDB;
+        flex-direction: column;
+    
+        .logo-footer{
+            margin-bottom: 15px;
+    
+            img{
+                width: 113px;
+                height: 28px;
+            }
+        }
+    
+        .colum-wrap{
+            display: flex;
+            justify-content: space-between;
+
+            .colum{
+                margin-right: 25px;
+    
+                ul{
+    
+                    li{
+                        margin-bottom: 7px;
+    
+                        a{
+                            font-size: 11px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .copy-right{
+        padding: 0 48px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        flex-direction: column;
+    
+        p{
+            font-size: 9px;
+            line-height: 11px;
+            margin-right: 93px;
+            margin-bottom: 20px;
+        }
+    
+        .tern-link{
+            display: flex;
+    
+            a{
+                font-weight: bold;
+                font-size: 9px;
+                line-height: 11px; 
+
+                &.term{
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+}
+
 // Responsive Css end //
