@@ -601,8 +601,8 @@ article img {
   margin-bottom: 60px;
 }
 .plan button {
-  width: 200px;
-  height: 65px;
+  width: 228px;
+  height: 70px;
   color: #4BA87D;
   background: #FFFFFF;
   font-weight: 800;
@@ -612,9 +612,18 @@ article img {
   transition: all 350ms ease;
   letter-spacing: 2.1px;
   border: none;
+  margin-bottom: 15px;
 }
 .plan button:hover {
-  box-shadow: inset 6.5em 0 0 0 var(--hover);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
+  color: #FFFFFF;
+  background: #4BA87D;
+}
+.plan p {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #FFFFFF;
 }
 
 footer {
@@ -1967,7 +1976,7 @@ footer .colum-wrap .colum ul li a:hover {
     margin-bottom: 32px;
   }
   .plan button {
-    width: 131px;
+    width: 173px;
     height: 42px;
     font-size: 12px;
     line-height: 15px;
@@ -2038,28 +2047,46 @@ footer .colum-wrap .colum ul li a:hover {
   }
 
   header {
-    padding-top: 18px;
+    width: 100%;
+    transition: all 500ms ease;
   }
-  header .logo img {
-    width: 110px;
-    height: 29px;
+  header #header {
+    padding-top: 15px;
+    padding-bottom: 18px;
   }
-  header nav ul li {
+  header #header .logo img {
+    width: 120px;
+    height: 32px;
+  }
+  header #header nav ul {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  header #header nav ul li {
     display: none;
   }
-  header nav ul li.sign-up {
+  header #header nav ul li.sign-up {
     display: block;
-    border: none;
     padding: 0;
-    margin-left: 16px;
+    margin-left: 11px;
   }
-  header nav ul li.sign-up button {
-    font-size: 11px;
-    padding: 3px 12px;
-    font-weight: 700;
-  }
-  header nav ul li a {
+  header #header nav ul li.sign-up button {
+    width: 127px;
+    height: 30px;
+    font-weight: 800;
     font-size: 12px;
+    line-height: 20px;
+    border: 1px solid #4BA87D;
+  }
+  header #header nav ul li.sign-up button:hover {
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
+    letter-spacing: 0px;
+  }
+
+  .active-header {
+    margin-top: -10px;
+    width: 100%;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
   }
 
   article {
@@ -2192,8 +2219,8 @@ footer .colum-wrap .colum ul li a:hover {
     flex-direction: column;
   }
   .contact .member .member-img img {
-    width: 337px;
-    height: 226px;
+    width: 300px;
+    height: 190px;
   }
   .contact .member .member-img .member-name {
     left: 22px;
@@ -2209,12 +2236,12 @@ footer .colum-wrap .colum ul li a:hover {
     line-height: 14px;
   }
   .contact .slogan {
-    max-width: 545px;
+    max-width: 350px;
     margin-top: 12px;
     margin-bottom: 22px;
   }
   .contact .slogan h5 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 36px;
   }
   .contact .send-email {
@@ -2257,7 +2284,7 @@ footer .colum-wrap .colum ul li a:hover {
     border: none;
   }
   .contact .slogan2 {
-    max-width: 347px;
+    max-width: 290px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -2265,10 +2292,12 @@ footer .colum-wrap .colum ul li a:hover {
     margin-bottom: 53px;
   }
   .contact .slogan2 h5 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 36px;
   }
   .contact .logo-brand {
+    flex-wrap: wrap;
+    justify-content: center;
     max-width: 944px;
     width: 100%;
     margin: 0 auto;
@@ -2276,46 +2305,59 @@ footer .colum-wrap .colum ul li a:hover {
   }
   .contact .logo-brand img {
     width: 104px;
+    margin-bottom: 30px;
+    margin-right: 40px;
   }
   .contact .logo-brand .dragon {
     width: 55px;
   }
 
   .plan {
-    padding: 59px 148px 59px 148px;
-    margin-top: 95px;
-    margin-bottom: 50px;
+    padding: 50px 69px 49px 69px;
+    margin-top: 40px;
+    margin-bottom: 35px;
   }
   .plan h5 {
-    font-size: 42px;
-    line-height: 56px;
+    font-size: 36px;
+    line-height: 48px;
     margin-bottom: 34px;
   }
   .plan button {
-    width: 131px;
+    width: 165px;
     height: 42px;
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 11px;
+    line-height: 17px;
     letter-spacing: 2.1px;
+  }
+  .plan p {
+    font-size: 17px;
   }
 
   footer {
     padding: 0 47px;
     padding-bottom: 64px;
     border-bottom: 2px solid #DBDBDB;
+    flex-direction: column;
+  }
+  footer .logo-footer {
+    margin-bottom: 15px;
   }
   footer .logo-footer img {
     width: 113px;
     height: 28px;
   }
-  footer .colum {
-    margin-right: 39px;
+  footer .colum-wrap {
+    display: flex;
+    justify-content: space-between;
   }
-  footer .colum ul li {
+  footer .colum-wrap .colum {
+    margin-right: 25px;
+  }
+  footer .colum-wrap .colum ul li {
     margin-bottom: 7px;
   }
-  footer .colum ul li a {
-    font-size: 12px;
+  footer .colum-wrap .colum ul li a {
+    font-size: 11px;
     line-height: 14px;
   }
 
@@ -2323,18 +2365,24 @@ footer .colum-wrap .colum ul li a:hover {
     padding: 0 48px;
     margin-top: 25px;
     margin-bottom: 30px;
+    flex-direction: column;
   }
   .copy-right p {
     font-size: 9px;
     line-height: 11px;
     margin-right: 93px;
+    margin-bottom: 20px;
   }
-  .copy-right a {
+  .copy-right .tern-link {
+    display: flex;
+  }
+  .copy-right .tern-link a {
+    font-weight: bold;
     font-size: 9px;
     line-height: 11px;
   }
-  .copy-right a.term {
-    margin-right: 30px;
+  .copy-right .tern-link a.term {
+    margin-right: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
