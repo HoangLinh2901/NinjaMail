@@ -2385,7 +2385,7 @@ footer .colum-wrap .colum ul li a:hover {
     margin-right: 50px;
   }
 }
-@media (min-width: 430px) and (max-width: 430px) {
+@media (max-width: 430px) {
   .container {
     padding: 0 15px;
   }
@@ -2396,11 +2396,11 @@ footer .colum-wrap .colum ul li a:hover {
   }
   header #header {
     padding-top: 15px;
-    padding-bottom: 18px;
+    padding-bottom: 12px;
   }
   header #header .logo img {
-    width: 120px;
-    height: 32px;
+    width: 84px;
+    height: 25px;
   }
   header #header nav ul {
     margin-bottom: 0;
@@ -2415,10 +2415,10 @@ footer .colum-wrap .colum ul li a:hover {
     margin-left: 11px;
   }
   header #header nav ul li.sign-up button {
-    width: 127px;
-    height: 30px;
+    width: 98px;
+    height: 25px;
     font-weight: 800;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 20px;
     border: 1px solid #4BA87D;
   }
@@ -2428,7 +2428,7 @@ footer .colum-wrap .colum ul li a:hover {
   }
 
   .active-header {
-    margin-top: -10px;
+    margin-top: -8px;
     width: 100%;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
   }
@@ -2442,60 +2442,62 @@ footer .colum-wrap .colum ul li a:hover {
   }
   article .try-now h3 {
     width: 65%;
-    font-size: 25px;
-    line-height: 33px;
+    font-size: 18px;
+    line-height: 24px;
     margin-left: 10px;
-    margin-bottom: 139px;
+    margin-bottom: 70px;
   }
   article .try-now p {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 11px;
+    line-height: 14px;
     margin-top: 16px;
     margin-bottom: 13px;
   }
   article .try-now .try-btn {
     text-align: center;
+    display: flex;
+    justify-content: space-between;
   }
   article .try-now .try-btn .try {
-    width: 112px;
-    height: 36px;
-    font-size: 11px;
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
     line-height: 15px;
     border: 2px solid #4BA87D;
-    margin-right: 20px;
+    margin: 0;
   }
   article .try-now .try-btn .demo {
-    width: 112px;
-    height: 36px;
-    font-size: 11px;
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
     line-height: 15px;
     border: 2px solid #4BA87D;
   }
   article img {
     right: 0px;
-    top: 25px;
-    width: 400px;
-    height: 219px;
+    top: 5px;
+    width: 288px;
+    height: 157px;
   }
 
   .video-detail {
     padding: 30px 15px 114px 15px;
   }
   .video-detail .reach-more {
-    top: 32%;
-    bottom: 32%;
+    top: 19%;
+    bottom: 19%;
     left: 21%;
     right: 21%;
   }
   .video-detail .reach-more h4 {
-    font-size: 22px;
-    line-height: 29px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 16px;
   }
   .video-detail .reach-more button {
-    width: 132px;
-    height: 42px;
-    font-size: 11px;
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
     line-height: 10px;
   }
   .video-detail .video-bg {
@@ -2510,74 +2512,78 @@ footer .colum-wrap .colum ul li a:hover {
   .news {
     margin-top: -152px;
     padding-top: 68px;
-    padding-bottom: 14px;
+    padding-bottom: 20px;
   }
   .news .new-wrap {
     transform: skew(0deg, 10deg);
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .news .new-wrap .down1 {
-    margin-bottom: 48px;
+    margin-bottom: 0;
   }
   .news .new-wrap .down2 {
     margin-bottom: -41px;
-    margin-top: 75px;
+    margin-top: 30px;
   }
   .news .new-wrap .new {
-    width: 192px;
+    width: 170px;
   }
   .news .new-wrap .new .new-img {
-    width: 192px;
+    width: 170px;
   }
   .news .new-wrap .new .new-detail {
-    width: 192px;
+    width: 170px;
     padding: 17px 24px;
   }
   .news .new-wrap .new .new-detail p {
-    font-size: 12px;
-    line-height: 16px;
-    margin-bottom: 7px;
+    font-size: 9px;
+    line-height: 13px;
+    margin-bottom: 4px;
   }
   .news .new-wrap .new .new-detail a {
-    font-size: 11px;
+    font-size: 9px;
     line-height: 12px;
   }
   .news .new-wrap .ads {
     width: 248px;
-    padding-top: 49px;
+    padding-top: 75px;
   }
   .news .new-wrap .ads h4 {
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 18px;
+    line-height: 22px;
     margin-bottom: 13px;
   }
   .news .new-wrap .ads p {
     width: 92%;
-    font-size: 11px;
+    font-size: 9px;
     line-height: 13px;
   }
 
+  .contact {
+    margin-top: 0px;
+  }
   .contact .member {
     margin: 0 -4px;
     align-items: center;
     flex-direction: column;
   }
   .contact .member .member-img img {
-    width: 300px;
-    height: 190px;
+    width: 222px;
+    height: 157px;
   }
   .contact .member .member-img .member-name {
     left: 22px;
     bottom: 30px;
   }
   .contact .member .member-img .member-name h5 {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 20px;
     margin: 0;
   }
   .contact .member .member-img .member-name p {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 9px;
+    line-height: 11px;
   }
   .contact .slogan {
     max-width: 350px;
@@ -2585,8 +2591,8 @@ footer .colum-wrap .colum ul li a:hover {
     margin-bottom: 22px;
   }
   .contact .slogan h5 {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .contact .send-email {
     max-width: 300px;
@@ -2602,8 +2608,8 @@ footer .colum-wrap .colum ul li a:hover {
   }
   .contact .send-email .email-input .input input {
     width: 100%;
-    height: 42px;
-    padding: 12px 16px;
+    height: 38px;
+    padding: 7px 11px;
     border: 1px solid #9F9F9F;
     border-radius: 5px;
     margin-right: 0;
@@ -2611,33 +2617,33 @@ footer .colum-wrap .colum ul li a:hover {
     line-height: 15px;
   }
   .contact .send-email .email-input .input .alert {
-    margin-top: 4px;
-    padding: 4px 1.25rem;
+    margin-top: 3px;
+    padding: 4px 11px;
   }
   .contact .send-email .email-input .input .alert p {
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 9px;
+    line-height: 11px;
   }
   .contact .send-email .email-input button {
-    max-width: 144px;
+    max-width: 124px;
     width: 100%;
-    height: 42px;
-    font-size: 12px;
-    line-height: 15px;
+    height: 36px;
+    font-size: 10px;
+    line-height: 12px;
     letter-spacing: 2.1px;
     border: none;
   }
   .contact .slogan2 {
-    max-width: 290px;
+    max-width: 200px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 53px;
+    margin-top: 33px;
+    margin-bottom: 40px;
   }
   .contact .slogan2 h5 {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .contact .logo-brand {
     flex-wrap: wrap;
@@ -2648,12 +2654,12 @@ footer .colum-wrap .colum ul li a:hover {
     padding: 0px 45px;
   }
   .contact .logo-brand img {
-    width: 104px;
+    width: 87px;
     margin-bottom: 30px;
     margin-right: 40px;
   }
   .contact .logo-brand .dragon {
-    width: 55px;
+    width: 40px;
   }
 
   .plan {
@@ -2662,24 +2668,24 @@ footer .colum-wrap .colum ul li a:hover {
     margin-bottom: 35px;
   }
   .plan h5 {
-    font-size: 36px;
-    line-height: 48px;
-    margin-bottom: 34px;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 22px;
   }
   .plan button {
-    width: 165px;
-    height: 42px;
-    font-size: 11px;
-    line-height: 17px;
-    letter-spacing: 2.1px;
+    width: 120px;
+    height: 38px;
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing: 1.1px;
   }
   .plan p {
-    font-size: 17px;
+    font-size: 12px;
   }
 
   footer {
-    padding: 0 47px;
-    padding-bottom: 64px;
+    padding: 0 0px;
+    padding-bottom: 45px;
     border-bottom: 2px solid #DBDBDB;
     flex-direction: column;
   }
@@ -2687,46 +2693,46 @@ footer .colum-wrap .colum ul li a:hover {
     margin-bottom: 15px;
   }
   footer .logo-footer img {
-    width: 113px;
-    height: 28px;
+    width: 84px;
+    height: 25px;
   }
   footer .colum-wrap {
     display: flex;
     justify-content: space-between;
   }
   footer .colum-wrap .colum {
-    margin-right: 25px;
+    margin-right: 11px;
   }
   footer .colum-wrap .colum ul li {
     margin-bottom: 7px;
   }
   footer .colum-wrap .colum ul li a {
-    font-size: 11px;
-    line-height: 14px;
+    font-size: 9px;
+    line-height: 11px;
   }
 
   .copy-right {
-    padding: 0 48px;
-    margin-top: 25px;
-    margin-bottom: 30px;
+    padding: 0 0px;
+    margin-top: 20px;
+    margin-bottom: 25px;
     flex-direction: column;
   }
   .copy-right p {
-    font-size: 9px;
+    font-size: 7px;
     line-height: 11px;
-    margin-right: 93px;
-    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-bottom: 3px;
   }
   .copy-right .tern-link {
     display: flex;
   }
   .copy-right .tern-link a {
     font-weight: bold;
-    font-size: 9px;
+    font-size: 7px;
     line-height: 11px;
   }
   .copy-right .tern-link a.term {
-    margin-right: 50px;
+    margin-right: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
