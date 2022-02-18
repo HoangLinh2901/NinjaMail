@@ -2459,7 +2459,7 @@ footer .colum-wrap .colum ul li a:hover {
     justify-content: space-between;
   }
   article .try-now .try-btn .try {
-    width: 100px;
+    width: 105px;
     height: 30px;
     font-size: 10px;
     line-height: 15px;
@@ -2484,8 +2484,8 @@ footer .colum-wrap .colum ul li a:hover {
     padding: 30px 15px 114px 15px;
   }
   .video-detail .reach-more {
-    top: 19%;
-    bottom: 19%;
+    top: 30%;
+    bottom: 30%;
     left: 21%;
     right: 21%;
   }
