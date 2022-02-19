@@ -213,7 +213,7 @@ header #header nav ul li.sign-up button {
   font-weight: 800;
   font-size: 15px;
   line-height: 20px;
-  border: 1px solid #4BA87D;
+  border: 3px solid #4BA87D;
   cursor: pointer;
   transition: all 350ms ease;
   text-transform: none;
@@ -703,7 +703,7 @@ footer .colum-wrap .colum ul li a:hover {
     transition: all 500ms ease;
   }
   header #header {
-    padding-top: 15px;
+    padding-top: 30px;
     padding-bottom: 21px;
   }
   header #header .logo img {
@@ -751,7 +751,7 @@ footer .colum-wrap .colum ul li a:hover {
     font-weight: 800;
     font-size: 15px;
     line-height: 20px;
-    border: 1px solid #4BA87D;
+    border: px solid #4BA87D;
   }
   header #header nav ul li.sign-up button:hover {
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
@@ -759,7 +759,7 @@ footer .colum-wrap .colum ul li a:hover {
   }
 
   .active-header {
-    margin-top: -15px;
+    margin-top: -10px;
     width: 100%;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
   }
@@ -1033,7 +1033,7 @@ footer .colum-wrap .colum ul li a:hover {
     transition: all 500ms ease;
   }
   header #header {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 21px;
   }
   header #header .logo img {
@@ -1081,7 +1081,7 @@ footer .colum-wrap .colum ul li a:hover {
     font-weight: 800;
     font-size: 13px;
     line-height: 20px;
-    border: 1px solid #4BA87D;
+    border: 3px solid #4BA87D;
   }
   header #header nav ul li.sign-up button:hover {
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
@@ -1089,7 +1089,7 @@ footer .colum-wrap .colum ul li a:hover {
   }
 
   .active-header {
-    margin-top: -15px;
+    margin-top: -1px;
     width: 100%;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
   }
@@ -1375,7 +1375,7 @@ footer .colum-wrap .colum ul li a:hover {
     transition: all 500ms ease;
   }
   header #header {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 18px;
   }
   header #header .logo img {
@@ -1432,7 +1432,7 @@ footer .colum-wrap .colum ul li a:hover {
   }
 
   .active-header {
-    margin-top: -10px;
+    margin-top: -1px;
     width: 100%;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
   }
@@ -1750,6 +1750,12 @@ footer .colum-wrap .colum ul li a:hover {
   header #header nav ul li.sign-up button:hover {
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
     letter-spacing: 0px;
+  }
+
+  .active-header {
+    margin-top: -10px;
+    width: 100%;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
   }
 
   article {
