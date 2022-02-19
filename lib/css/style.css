@@ -618,6 +618,7 @@ article img {
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
   color: #FFFFFF;
   background: #4BA87D;
+  border: 4px solid #FFFFFF;
 }
 .plan p {
   font-weight: 500;
@@ -751,7 +752,7 @@ footer .colum-wrap .colum ul li a:hover {
     font-weight: 800;
     font-size: 15px;
     line-height: 20px;
-    border: px solid #4BA87D;
+    border: 3px solid #4BA87D;
   }
   header #header nav ul li.sign-up button:hover {
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.274);
